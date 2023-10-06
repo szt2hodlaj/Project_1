@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project_css.css">
+    <title>Karate Órarend</title>
+
+</head>
+<body>
+
+    
+    <div id="menuicondiv"></div>
+    <div id="menudiv">
+        <span id="closeBtn">✕</span>
+        <ul>
+            <li>Betü szín választása:<input id="valaszszint" type="color"/></li>
+            <li>Betű típusa válsztása:
+                <select id="font-style-selector">
+                    <option value="font-style1">Arial</option>
+                    <option value="font-style2">Times New Roman</option>
+                    <option value="font-style3">Courier New</option>
+                </select>
+            </li>
+            <button onclick="Onchange()">Mentés</button>
+        </ul>
+    </div>
+
+    <button id="DarkMode" onclick="DarkModeChange()"></button>
+    
+    <div id="fődiv">
+        
+        <div id="cim"><header>Karate Órarend</header> </div>
+            <div id="hkn" class="flex-container">
+                <div class="hknnapok" >
+                    <div class="napok">Hétfő</div>
+                    <div class="orak">17:00 <br> Kyokushin Karate kezdő</div>
+                    <div class="orak">17:00 <br> Kyokushin Karate 10-14 év</div>
+                    <div class="orak">17:30 <br> TADASHII dojo edzés</div>
+                    <div class="orak">18:00 <br> Atlétika</div>
+                    <div class="orak">18:00 <br> Kyokushin Karate haladó</div>
+                    <div class="orak">18:15 <br> TADASHII dojo edzés</div>
+                </div>
+                <div class="hknnapok">
+                    <div class="napok">Kedd</div>
+                    <div class="orak">12:00 <br> NoGi Fighting</div>
+                    <div class="orak">14:00 <br> Mobility training</div>
+                    <div class="orak">16:30 <br> Női önvédelem</div>
+                    <div class="orak">16:45 <br> Gyerek 2 edzés</div>
+                    <div class="orak">16:55 <br> Gyerek 2 edzés</div>
+                    <div class="orak">17:45 <br> Kyokushin Karate 10 év alatt</div>
+                    <div class="orak">19:00 <br> Funkcionális edzés</div>
+                </div>
+                <div class="hknnapok">
+                    <div class="napok">Szerda</div>
+                    <div class="orak">17:00 <br> Kyokushin Karate kezdő</div>
+                    <div class="orak">17:00 <br> Kyokushin Karate 10-14 év</div>
+                    <div class="orak">17:30 <br> TADASHII dojo edzés</div>
+                    <div class="orak">18:15 <br> TADASHII dojo edzés</div>
+                    <div class="orak">18:00 <br> Kyokushin Karate haladó</div>
+                    <div class="orak">19:45 <br> Karate Felnőtt</div>
+                    <div class="orak">19:55 <br> Karate Felnőtt</div>
+                </div>
+                <div class="hknnapok">
+                    <div class="napok">Csütörtök</div>
+                    <div class="orak">16:30 <br> Női önvédelem</div>
+                    <div class="orak">16:45 <br> Gyerek 2 edzés</div>
+                    <div class="orak">16:55 <br> Gyerek 2 edzés</div>
+                    <div class="orak">17:45 <br> Kyokushin Karate 10 év alatt</div>
+                    <div class="orak">19:00 <br> Funkcionális edzés</div>
+                </div>
+                <div class="hknnapok">
+                    <div class="napok">Péntek</div>
+                    <div class="orak">12:00 <br> NoGi Fighting</div>
+                    <div class="orak">14:00 <br> Mobility training</div>
+                    <div class="orak">17:00 <br> Kyokushin Karate kezdő</div>
+                    <div class="orak">17:00 <br> Kyokushin Karate 10-14 év</div>
+                    <div class="orak">18:00 <br> TADASHII dojo edzés</div>
+                    <div class="orak">18:00 <br> Kyokushin Karate haladó</div>
+                    <div class="orak">19:45 <br> Karate Felnőtt</div>
+                    <div class="orak">19:55 <br> Karate Felnőtt</div>
+                </div>
+                
+            </div>
+            <div id="hv" class="flex-container">
+                <div class="hvnapok">
+                    <div class="napok">Szombat</div>
+                    <div class="orak">10:15 <br> Mobility training</div>
+                    <div class="orak">11:30 <br> Weekend Warriors</div>
+                    <div class="orak">13:15 <br> Funkcionális edzés</div>
+                </div>
+                <div class="hvnapok">
+                    <div class="napok">Vasárnap</div>
+                    <div class="orak">13:15 <br> Funkcionális edzés</div>
+                    <div class="orak">11:30 <br> Weekend Warriors</div>
+                </div>
+            </div>
+
+            
+    </div>
+    <script src="Project_js.js"></script>
+
+</body>
+</html>
