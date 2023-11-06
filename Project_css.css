@@ -95,20 +95,6 @@ header{
 
 }
 
-#DarkMode{
-    background-color: var(--khszine); 
-    border: none; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    width: 3.5em;
-    height: 3.5em;
-    background-image: url(hold.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    color: var(--menudivszin); 
-    font-size: 16px; 
-
-}
 
 
 #menuicondiv {

@@ -1,23 +1,3 @@
-var darkMode = false; 
-
-function DarkModeChange() {
-    var button = document.getElementById('DarkMode');
-    if (darkMode) {
-        document.documentElement.style.setProperty('--khszine', 'white');
-        document.documentElement.style.setProperty('--szovszine', 'black');
-        document.documentElement.style.setProperty('--ahsotetm', 'rgba(255, 255, 255, 0.5)');
-        button.style.backgroundImage = "url(hold.jpg)";
-        darkMode = false; 
-    } else {
-        document.documentElement.style.setProperty('--khszine', 'black');
-        document.documentElement.style.setProperty('--szovszine', 'white');
-        document.documentElement.style.setProperty('--ahsotetm', 'rgba(0, 0, 0, 0.5)');
-        button.style.backgroundImage = "url(hold.jpg)";
-        darkMode = true; 
-        
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.getElementById("menuicondiv");
     const menu = document.getElementById("menudiv");
