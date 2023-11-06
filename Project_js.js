@@ -52,3 +52,25 @@ function Onchange(){
     }
 
 }
+
+const app = document.getElementById("app");
+const toggleButton = document.getElementById("toggle-mode");
+
+const savedMode = localStorage.getItem("mode");
+if (savedMode) {
+    app.classList.add(savedMode);
+}
+
+function toggleMode() {
+    if (app.classList.contains("dark-mode")) {
+        app.classList.remove("dark-mode");
+        app.classList.add("light-mode");
+        localStorage.setItem("mode", "light-mode");
+    } else {
+        app.classList.remove("light-mode");
+        app.classList.add("dark-mode");
+        localStorage.setItem("mode", "dark-mode");
+    }
+}
+
+toggleButton.addEventListener("click", toggleMode);
